@@ -1,12 +1,22 @@
 Image Clipper
 -------------
 
-This is a fork of the [imageclipper](https://code.google.com/p/imageclipper/)
+This is a fork of the [imageclipper](https://github.com/JoakimSoderberg/imageclipper)
+by JoakimSoderberg,
+which is a fork of the [imageclipper](https://code.google.com/p/imageclipper/)
 program initially written by Naotoshi Seo.
 
-This fork was made initially for myself to be able to compile the program on OSX.
-Since I used [CMake](http://www.cmake.org/) it was easy to make one build that
+This fork was made initially for JoakimSoderberg to be able to compile the program on OSX.
+Since he used [CMake](http://www.cmake.org/) it was easy to make one build that
 works on all platforms.
+
+I tried to compile for Windows and realised that the description at the time of writing is no longer accurate in some ways
+<br>Thus I decided to rework the thing. Maybe add some other stuffs to it.
+
+<aside class="warning">
+This is tested by this author on Windows 7 ONLY.<br>
+  It does NOT work on Windows 10 as of current status.
+</aside>
 
 From the original description:
 
@@ -19,7 +29,11 @@ From the original description:
 ## Building
 
 To build you need [CMake](http://www.cmake.org/), [OpenCV](http://opencv.org/) and [Boost](http://www.boost.org/)
-on your system
+on your system<br>
+Tested working version on Windows 7 as of (4/4/2019)<br>
+CMake 3.14.1<br>
+OpenCV 2.4.9<br>
+Boost 1.55.0
 
 ### Linux & OSX
 
@@ -55,8 +69,8 @@ On windows you need to download [Visual Studio for Windows Desktop](http://www.v
 
 ###### Boost
 
-Has been tested with this verison on Windows 7, but should work with whatever you like:
-[Boost 1.55.0 32-bit MSVC12](http://sourceforge.net/projects/boost/files/boost-binaries/1.55.0-build2/)
+Has been tested with this version on Windows 7, but should work with whatever you like:
+[boost_1_55_0-msvc-12.0-32.exe](http://sourceforge.net/projects/boost/files/boost-binaries/1.55.0-build2/)
 The default unpack location is **c:\local\boost_1_55_0**, if you change it you need to know the path when building.
 
 ###### OpenCV
